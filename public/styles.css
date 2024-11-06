@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #1e2a3a;
+    color: #c1c9d2;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  h1 {
+    color: #00d1ff;
+    font-size: 24px;
+  }
+  
+  .controls select,
+  .controls button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .connect {
+    display: flex;
+    align-items: center;
+  }
+  
+  .connect button {
+    background-color: #00d1ff;
+    color: #1e2a3a;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .toggle {
+    position : relative ;
+    display : inline-block;
+    width : 40px;
+    height : 20px;
+    background-color: rgb(159, 153, 153);
+    border-radius: 30px;
+    border: 2px solid gray;
+}
+      
+/* After slide changes */
+.toggle:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px; 
+    left: 0px;
+    transition:  all 0.5s;
+}
+    
+.checkbox:checked + .toggle::after {
+  left : 20px; 
+}
+
+/* Checkbox checked toggle label bg color */
+.checkbox:checked + .toggle {
+  background-color: #00d1ff;
+}
+    
+/* Checkbox vanished */
+.checkbox { 
+  display : none;
+}
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .trade-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .percentage p {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .best-price h2 {
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  .table-container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #263343;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: center;
+    color: #c1c9d2;
+  }
+  
+  th {
+    background-color: #333f50;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #2d3b4d;
+  }
+  
+  .add-to-home {
+    background-color: #00d1ff;
+    color: #1e2a3a;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 20px;
+  }
+  
